@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className="c-space my-20 bg-gray-50 p-6 rounded-lg shadow-md">
+    <section className="c-space my-20 bg-gradient-to-r from-gray-300 via-white to-gray-300 p-6 rounded-lg shadow-md">
       <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-1 xl:row-span-3">
           <div className="grid-container">
