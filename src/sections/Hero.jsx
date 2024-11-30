@@ -5,43 +5,6 @@ import CanvasLoader from '../components/CanvasLoader'
 import { Leva, useControls } from 'leva'
 
 const Hero = () => {
-  const { positionX, positionY, positionZ, rotationX, rotationY, rotationZ, scale } = useControls('HackerRoom', {
-    positionX: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionY: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionZ: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    rotationX: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationY: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationZ: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    scale: {
-      value: 1,
-      min: 0,
-      max: 5,
-    },
-  })
 
   return (
     <section className="min-h-screen border-2 w-full flex flex-col relative">
