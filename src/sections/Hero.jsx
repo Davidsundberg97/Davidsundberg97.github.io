@@ -52,7 +52,7 @@ const Hero = () => {
         <p className="hero_tag text-gray-500">Software developer</p>
       </div>
       <div className="w-full h-full absolute inset-0">
-        <Leva />
+        {/*<Leva />*/}
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <perspectiveCamera makeDefault position={[0, 0, 30]} />
