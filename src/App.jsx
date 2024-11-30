@@ -3,10 +3,12 @@ import Hero from './sections/hero'
 import About from './sections/About'
 import Contacts from './sections/Contacts'
 import Footer from './sections/Footer' // Import Footer
+import ShootingStars from './components/ShootingStars' // Import ShootingStars
 
 const App = () => {
   return (
-    <main className="max-w-7xl mx-auto">
+    <main className="max-w-7xl mx-auto relative">
+      <ShootingStars /> {/* Add ShootingStars */}
       <Navbar id="navbar"/>
       <Hero id="hero"/>
       <About id="about"/>
