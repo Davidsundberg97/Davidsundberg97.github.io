@@ -12,7 +12,7 @@ const About = () => {
         <div className="col-span-2 xl:row-span-3 flex flex-col justify-center">
           <h2 className="text-3xl font-semibold mb-4 text-center">About Me</h2>
           <p className="text-lg text-gray-700 text-center">
-            I am a software developer based in Norrköping, Sweden. With 4 years of developer experience, I have worked on a wide range of projects, from web applications to desktop applications. I am passionate about building software that is both user-friendly and scalable.
+            I am a software developer based in Norrköping, Sweden. With 4 years of developer experience, I have worked on a wide range of projects, from web applications to desktop applications in languages such as C++, Python and Javascript. I am passionate about building software that is both user-friendly and scalable.
           </p>
         </div>
       </div>
