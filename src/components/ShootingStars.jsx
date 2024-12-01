@@ -17,13 +17,24 @@ const ShootingStars = () => {
     const shootingStars = [];
 
     const createShootingStar = () => {
-      shootingStars.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        length: Math.random() * 80 + 10,
-        speed: Math.random() * 4 + 2,
-        angle: -Math.PI / 4, // Change angle to -45 degrees for top-right to bottom-left movement
-      });
+      const edge = Math.random() < 0.5 ? 'top' : 'right';
+      if (edge === 'top') {
+        shootingStars.push({
+          x: Math.random() * canvas.width,
+          y: 0,
+          length: Math.random() * 80 + 10,
+          speed: Math.random() * 4 + 2,
+          angle: -Math.PI / 4,
+        });
+      } else {
+        shootingStars.push({
+          x: canvas.width,
+          y: Math.random() * canvas.height,
+          length: Math.random() * 80 + 10,
+          speed: Math.random() * 4 + 2,
+          angle: -Math.PI / 4,
+        });
+      }
     };
 
     const animate = () => {
