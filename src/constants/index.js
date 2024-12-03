@@ -1,4 +1,6 @@
 export const navLinks = [
+    { id: 'about', href: '#about', name: 'About' },
+    { id: 'projects', href: '#projects', name: 'Projects' }, // Added Projects link
     { id: 'contact', href: '#contact', name: 'Contact' },
 ];
 
@@ -6,7 +8,7 @@ export const navLinks = [
   export const myProjects = [
     {
       title: 'Particle System - Fire Simulation',
-      desc: 'This project is a simple particle system that simulates fire using Pygame. It allows you to control the size and number of particles using sliders and spawn fire particles by clicking on the screen.',
+      desc: 'This project is a particle system that simulates fire using Pygame. It allows you to control the size and number of particles using sliders and spawn fire particles by clicking on the screen.',
       href: 'https://github.com/Davidsundberg97/Particles',
       texture: '/textures/project/project1.mp4',
       logo: '/assets/project-logo1.png',
@@ -16,30 +18,22 @@ export const navLinks = [
         boxShadow: '0px 0px 60px 0px #AA3C304D',
       },
       spotlight: '/assets/spotlight1.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
       image: 'public/assets/Fire_sim.PNG', // Added image property
     },
+    {
+      title: 'Flask and SQL project for managing data',
+      desc: 'This project is a web application that allows you to manage data using Flask and SQL. It includes features such as adding, updating, and deleting data, as well as searching for data using filters.',
+      href: 'https://github.com/Davidsundberg97/Flask_project',
+      texture: '/textures/project/project2.mp4',  
+      logo: '/assets/project-logo2.png',
+      logoStyle: {
+        backgroundColor: '#1B1C1E',
+        border: '0.2px solid #2C2D30',
+        boxShadow: '0px 0px 60px 0px #3D3E41',
+      },
+      spotlight: '/assets/spotlight2.png',
+      image: 'public/assets/Flask_project.PNG', // Added image property
+    }
   ];
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
